@@ -47,8 +47,7 @@ Marquez Santillan Jose Eduardo 21210395
  * Este programa fue creado para adentrarse al como un Raspberry Pi pico W realiza un hola mundo con blink.
  *
  * Historial de Revisiones:
- * [Fecha]        [Tu Nombre] - Creado
- * [Fecha]        [Tu Nombre] - Actualizado para añadir [característica/corrección]
+ * 23/10/2023        Marquez Santillan Jose Eduardo
  *
  */
 		
