@@ -61,6 +61,7 @@ void setup() {
 
 // La función de bucle se ejecuta una y otra vez infinitamente.
 void loop() {
+  Serial.print("Hola Mundo :DD");   // Hola mundo
   digitalWrite(LED_BUILTIN, HIGH);  // enciende el LED (HIGH es el nivel de voltaje)
   delay(1000);                      // espera durante un segundo
   digitalWrite(LED_BUILTIN, LOW);   // apaga el LED al establecer el voltaje en LOW
