@@ -1,5 +1,5 @@
 # 3.1-Simulador-picoW
-------------------------------------------------------------------------------------------------------------------------------------------------
+
 <pre>
 
 	<p align=center>
@@ -35,26 +35,35 @@ Marquez Santillan Jose Eduardo 21210395
 <pre>
 
 	<p align=left>
-------------------------------------------------------------------------------------------------------------------------------------------------
+
 /*
- * Nombre del Archivo: main.c
- * Autor:   [Tu Nombre]
- * Correo:  [Tu Correo]
- * Fecha:   [Fecha]
+ * Nombre del Archivo: Simulador PicoW
+ * Autor:   Marquez Santillan Jose Eduardo
+ * Correo:  l21210395@tectijuana.edu.mx
+ * Fecha:   24/10/2023
  * Curso:   Lenguajes de Interfaz, TECNM Campus ITT
  * 
  * Objetivo:
- * Este programa está diseñado para [proporcionar una breve descripción del objetivo del programa].
+ * Este programa fue creado para adentrarse al como un Raspberry Pi pico W realiza un hola mundo con blink.
  *
  * Historial de Revisiones:
  * [Fecha]        [Tu Nombre] - Creado
  * [Fecha]        [Tu Nombre] - Actualizado para añadir [característica/corrección]
  *
  */
+		
+//-------------------------------------------------------------------------------------------------------------------------------------------------
+		
+// La función de configuración se ejecuta una vez cuando presionas el botón de reinicio o enciendes la placa.
+void setup() {
+  // Inicializa el pin digital LED_BUILTIN como una salida.
+  pinMode(LED_BUILTIN, OUTPUT);
+}
 
-#include <stdio.h>
-
-int main(void) {
-    // Tu código aquí
-    return 0;
+// La función de bucle se ejecuta una y otra vez infinitamente.
+void loop() {
+  digitalWrite(LED_BUILTIN, HIGH);  // enciende el LED (HIGH es el nivel de voltaje)
+  delay(1000);                      // espera durante un segundo
+  digitalWrite(LED_BUILTIN, LOW);   // apaga el LED al establecer el voltaje en LOW
+  delay(1000);                      // espera durante un segundo
 }
